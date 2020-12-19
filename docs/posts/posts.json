@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to tasks",
+    "description": "Welcome to our new blog, tasks. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-12-19",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-19T19:02:34+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2020-12-19-raac-tat-de-la-situation-fin-2020/",
+    "title": "RAAC : état de la situation fin 2020",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Namik Taright",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-12-19",
+    "categories": [],
+    "contents": "\nLa réhabilitation améliorée après chirurgie est suivie dans le PMSI grâce à une variable introduite dans le format des résumés d’unité médicale en mars 2019.\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-19T19:16:45+01:00",
+    "input_file": "raac-tat-de-la-situation-fin-2020.utf8.md"
+  }
+]

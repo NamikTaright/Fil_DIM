@@ -1,0 +1,13 @@
+name: "Fil_DIM"
+title: "tasks"
+description: |
+  tasks demandées ...
+output_dir: "docs"
+base_url: https://namiktaright.github.io/Fil_DIM
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
