@@ -1,0 +1,35 @@
+---
+title: "Chirurgie à J zéro : un nouvel outil de la réduction des durées de séjour ?"
+description: |
+  Une description de la situation.
+author:
+  - name: Namik Taright
+    url: https://example.com/norajones
+date: 08-27-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r esquisse, include=FALSE}
+library(ggplot2)
+
+p <- ggplot(palmerpenguins::penguins) +
+ aes(x = bill_depth_mm, y = bill_length_mm, colour = species, size = island) +
+ geom_point(shape = "circle") +
+ scale_color_viridis_d(option = "viridis", direction = 1) +
+ theme_minimal()
+
+```
+
+
+Distill is a publication format for scientific and technical writing, native to the web.
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+

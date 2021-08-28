@@ -4,10 +4,18 @@
     <title>tasks</title>
     <link>https://namiktaright.github.io/</link>
     <atom:link href="https://namiktaright.github.io/index.xml" rel="self" type="application/rss+xml"/>
-    <description>tasks demandées ...
+    <description>tâches demandées ...
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 19 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Chirurgie à J zéro : un nouvel outil de la réduction des durées de séjour ?</title>
+      <dc:creator>Namik Taright</dc:creator>
+      <link>https://namiktaright.github.io/posts/2021-08-27-chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour</link>
+      <description>Une description de la situation.</description>
+      <guid>https://namiktaright.github.io/posts/2021-08-27-chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour</guid>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>RAAC : état de la situation fin 2020</title>
       <dc:creator>Namik Taright</dc:creator>

@@ -1,7 +1,7 @@
 name: "Fil_DIM"
 title: "tasks"
 description: |
-  tasks demandées ...
+  tâches demandées ...
 output_dir: "."
 base_url: https://namiktaright.github.io/
 navbar:
