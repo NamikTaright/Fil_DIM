@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-08-27-chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour/",
+    "title": "Chirurgie à J zéro : un nouvel outil de la réduction des durées de séjour ?",
+    "description": "Une description de la situation.",
+    "author": [
+      {
+        "name": "Namik Taright",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-08-27",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web. Learn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-28T15:40:40+02:00",
+    "input_file": "chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour.knit.md"
+  },
+  {
     "path": "posts/2020-12-19-raac-tat-de-la-situation-fin-2020/",
     "title": "RAAC : état de la situation fin 2020",
     "description": "A short description of the post.",
