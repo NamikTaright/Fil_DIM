@@ -4,7 +4,7 @@ description: |
   A short description of the post.
 author:
   - name: Namik Taright
-    url: https://example.com/norajones
+    url: https://namiktaright.github.io/
 date: 12-19-2020
 output:
   distill::distill_article:
