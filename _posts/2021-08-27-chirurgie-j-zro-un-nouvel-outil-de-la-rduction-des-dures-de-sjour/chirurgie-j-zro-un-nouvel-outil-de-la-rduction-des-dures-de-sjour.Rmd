@@ -16,18 +16,42 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# La méthode de sélection
+Un premier état des lieux a été réalisé sur les données de l'activité chirurgicale à l'AP-HP.
+Les séjours analysés sont ceux entrés en MCO à partir du domicile sans passage par le SAU (les PIE , transferts et mutations ont donc été exclus) et comportant au moins un acte chirurgical (défini comme acte appartenant au regroupement ADC de l'assurance maladie).
 
-```{r esquisse, include=FALSE}
-library(ggplot2)
+Si le séjour comporte plusieurs actes chirurgicaux réalisés à des dates différentes, nous retenons la date la plus précoce.
 
-p <- ggplot(palmerpenguins::penguins) +
- aes(x = bill_depth_mm, y = bill_length_mm, colour = species, size = island) +
- geom_point(shape = "circle") +
- scale_color_viridis_d(option = "viridis", direction = 1) +
- theme_minimal()
+Si pour le jour retenu, plusieurs actes ont été réalisés, nous retenons celui dont le nombre d'ICR est le plus élevé.
 
-```
+Le premier travail a été réalisé à partir des données d'un établissement comportant plusieurs entités géographiques et a mobilisé les données PMSI internes. Il mobilise les données du fichier commun de structure, plus riche que le type d'autorisation des UM.
+Si l'on souhaite se limiter aux caractéristiques des actes réalisés ou aux domaines d'activité, on peut aisément le reproduire sur la plateforme de données de l'ATIH.
 
+# Premiers résultats
+La DMS des séjours avec chirurgie réalisée à J0 est plus courte de manière quasi-constante si l'on utilise comme niveau de calcul la spécialité médicale de l'UM ou la niveau 3 de la hiérarchie de la CCAM.
+
+# Axes de travail
+Réaliser une analyse de la durée de séjour à partir d'un régression utilisant un modèle linéaire généralisé.
+La durée de séjour ($y_j$) est distribuée selon une distribution binomiale négative de paramètres ($\tau_{j}, \lambda_{j}$) où $\lambda_j$ est l'espérance d'une loi de Poisson et $\tau_j$ le paramètre introduit pour tenir compte de la dispersion résiduelle entre patients.
+
+Les variables de régression testées seront : 
+
+- effets fixes : 
+    - âge, 
+    - sexe, 
+    - précarité, 
+    - distance en kilomètres entre le domicile et l'hôpital
+- effets aléatoires : 
+    - ordonnée à l'origine, 
+    - catégories d'actes, 
+    - hôpital
+
+$$
+y_{j} \sim NegBin(\tau_{j}, \lambda_{j})
+$$
+
+$$    
+logit(\lambda_{j}) = log(\frac{\lambda_{j}}{1-\lambda_{j}}) = \frac{1}{1+exp(-x^{T}_{j}\beta)}$$
 
 Distill is a publication format for scientific and technical writing, native to the web.
 Learn more about using Distill at <https://rstudio.github.io/distill>.

@@ -126,7 +126,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/anchor-4.2.2/anchor.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/bowser-1.9.3/bowser.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/distill-2.2.21/template.v2.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/header-attrs-2.10/header-attrs.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/jquery-1.11.3/jquery.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/popper-2.6.0/popper.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy-bundle.umd.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy-light-border.css","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy.css","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy.umd.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/anchor-4.2.2/anchor.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/bowser-1.9.3/bowser.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/distill-2.2.21/template.v2.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/figure-html5/esquisse-1.png","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/header-attrs-2.10/header-attrs.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/jquery-1.11.3/jquery.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/popper-2.6.0/popper.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy-bundle.umd.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy-light-border.css","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy.css","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/tippy-6.2.7/tippy.umd.min.js","chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2107,6 +2107,36 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
+<h1 id="la-méthode-de-sélection">La méthode de sélection</h1>
+<p>Un premier état des lieux a été réalisé sur les données de l’activité chirurgicale à l’AP-HP. Les séjours analysés sont ceux entrés en MCO à partir du domicile sans passage par le SAU (les PIE , transferts et mutations ont donc été exclus) et comportant au moins un acte chirurgical (défini comme acte appartenant au regroupement ADC de l’assurance maladie).</p>
+<p>Si le séjour comporte plusieurs actes chirurgicaux réalisés à des dates différentes, nous retenons la date la plus précoce.</p>
+<p>Si pour le jour retenu, plusieurs actes ont été réalisés, nous retenons celui dont le nombre d’ICR est le plus élevé.</p>
+<p>Le premier travail a été réalisé à partir des données d’un établissement comportant plusieurs entités géographiques et a mobilisé les données PMSI internes. Il mobilise les données du fichier commun de structure, plus riche que le type d’autorisation des UM. Si l’on souhaite se limiter aux caractéristiques des actes réalisés ou aux domaines d’activité, on peut aisément le reproduire sur la plateforme de données de l’ATIH.</p>
+<h1 id="premiers-résultats">Premiers résultats</h1>
+<p>La DMS des séjours avec chirurgie réalisée à J0 est plus courte de manière quasi-constante si l’on utilise comme niveau de calcul la spécialité médicale de l’UM ou la niveau 3 de la hiérarchie de la CCAM.</p>
+<h1 id="axes-de-travail">Axes de travail</h1>
+<p>Réaliser une analyse de la durée de séjour à partir d’un régression utilisant un modèle linéaire généralisé. La durée de séjour (<span class="math inline">\(y_j\)</span>) est distribuée selon une distribution binomiale négative de paramètres (<span class="math inline">\(\tau_{j}, \lambda_{j}\)</span>) où <span class="math inline">\(\lambda_j\)</span> est l’espérance d’une loi de Poisson et <span class="math inline">\(\tau_j\)</span> le paramètre introduit pour tenir compte de la dispersion résiduelle entre patients.</p>
+<p>Les variables de régression testées seront :</p>
+<ul>
+<li>effets fixes :
+<ul>
+<li>âge,</li>
+<li>sexe,</li>
+<li>précarité,</li>
+<li>distance en kilomètres entre le domicile et l’hôpital</li>
+</ul></li>
+<li>effets aléatoires :
+<ul>
+<li>ordonnée à l’origine,</li>
+<li>catégories d’actes,</li>
+<li>hôpital</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+y_{j} \sim NegBin(\tau_{j}, \lambda_{j})
+\]</span></p>
+<p><span class="math display">\[    
+logit(\lambda_{j}) = log(\frac{\lambda_{j}}{1-\lambda_{j}}) = \frac{1}{1+exp(-x^{T}_{j}\beta)}\]</span></p>
 <p>Distill is a publication format for scientific and technical writing, native to the web. Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2116,6 +2146,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
