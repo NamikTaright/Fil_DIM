@@ -17,6 +17,23 @@
     "input_file": {}
   },
   {
+    "path": "posts/2021-11-05-les-distances/",
+    "title": "Les distances",
+    "description": "Recours vs proximité : quelques essais.",
+    "author": [
+      {
+        "name": "Namik Taright",
+        "url": "https://namiktaright.github.io/Fil_DIM"
+      }
+    ],
+    "date": "2021-11-05",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-11-05T22:26:55+01:00",
+    "input_file": "les-distances.knit.md"
+  },
+  {
     "path": "posts/2021-08-27-chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour/",
     "title": "Chirurgie à J zéro : un nouvel outil de la réduction des durées de séjour ?",
     "description": "Une description de la situation.",
