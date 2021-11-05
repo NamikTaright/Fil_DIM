@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/welcome/",
+    "title": "Bienvenue dans mes tâches",
+    "description": "La liste de mes tâches.",
+    "author": [
+      {
+        "name": "Namik Taright",
+        "url": "https://namiktaright.github.io/Fil_DIM"
+      }
+    ],
+    "date": "2021-11-08",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-11-05T21:31:33+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-08-27-chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour/",
     "title": "Chirurgie à J zéro : un nouvel outil de la réduction des durées de séjour ?",
     "description": "Une description de la situation.",
@@ -13,8 +30,8 @@
     "categories": [],
     "contents": "\nLa méthode de sélection\nUn premier état des lieux a été réalisé sur les données de l’activité chirurgicale à l’AP-HP. Les séjours analysés sont ceux entrés en MCO à partir du domicile sans passage par le SAU (les PIE , transferts et mutations ont donc été exclus) et comportant au moins un acte chirurgical (défini comme acte appartenant au regroupement ADC de l’assurance maladie).\nSi le séjour comporte plusieurs actes chirurgicaux réalisés à des dates différentes, nous retenons la date la plus précoce.\nSi pour le jour retenu, plusieurs actes ont été réalisés, nous retenons celui dont le nombre d’ICR est le plus élevé.\nLe premier travail a été réalisé à partir des données d’un établissement comportant plusieurs entités géographiques et a mobilisé les données PMSI internes. Il mobilise les données du fichier commun de structure, plus riche que le type d’autorisation des UM. Si l’on souhaite se limiter aux caractéristiques des actes réalisés ou aux domaines d’activité, on peut aisément le reproduire sur la plateforme de données de l’ATIH.\nPremiers résultats\nLa DMS des séjours avec chirurgie réalisée à J0 est plus courte de manière quasi-constante si l’on utilise comme niveau de calcul la spécialité médicale de l’UM ou la niveau 3 de la hiérarchie de la CCAM.\nAxes de travail\nRéaliser une analyse de la durée de séjour à partir d’un régression utilisant un modèle linéaire généralisé. La durée de séjour (\\(y_j\\)) est distribuée selon une distribution binomiale négative de paramètres (\\(\\tau_{j}, \\lambda_{j}\\)) où \\(\\lambda_j\\) est l’espérance d’une loi de Poisson et \\(\\tau_j\\) le paramètre introduit pour tenir compte de la dispersion résiduelle entre patients.\nLes variables de régression testées seront :\neffets fixes :\nâge,\nsexe,\nprécarité,\ndistance en kilomètres entre le domicile et l’hôpital\n\neffets aléatoires :\nordonnée à l’origine,\ncatégories d’actes,\nhôpital\n\n\\[\ny_{j} \\sim NegBin(\\tau_{j}, \\lambda_{j})\n\\]\n\\[    \nlogit(\\lambda_{j}) = log(\\frac{\\lambda_{j}}{1-\\lambda_{j}}) = \\frac{1}{1+exp(-x^{T}_{j}\\beta)}\\]\nDistill is a publication format for scientific and technical writing, native to the web. Learn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-08-29T16:03:47+02:00",
-    "input_file": "chirurgie-j-zro-un-nouvel-outil-de-la-rduction-des-dures-de-sjour.knit.md"
+    "last_modified": "2021-11-05T19:54:35+01:00",
+    "input_file": {}
   },
   {
     "path": "posts/2020-12-19-raac-tat-de-la-situation-fin-2020/",
@@ -30,24 +47,7 @@
     "categories": [],
     "contents": "\nLa réhabilitation améliorée après chirurgie (RAAC) est suivie dans le PMSI grâce à une variable introduite dans le format des résumés d’unité médicale en mars 2019.\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-08-28T16:13:50+02:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/welcome/",
-    "title": "Bienvenue dans mes tâches",
-    "description": "Welcome to our new blog, tasks. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Namik Taright",
-        "url": "https://namiktaright.github.io/Fil_DIM"
-      }
-    ],
-    "date": "2020-12-19",
-    "categories": [],
-    "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2020-12-21T00:20:11+01:00",
+    "last_modified": "2021-11-05T19:54:35+01:00",
     "input_file": {}
   }
 ]

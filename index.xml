@@ -7,7 +7,15 @@
     <description>tâches demandées ...
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Bienvenue dans mes tâches</title>
+      <dc:creator>Namik Taright</dc:creator>
+      <link>https://namiktaright.github.io/posts/welcome</link>
+      <description>La liste de mes tâches.</description>
+      <guid>https://namiktaright.github.io/posts/welcome</guid>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Chirurgie à J zéro : un nouvel outil de la réduction des durées de séjour ?</title>
       <dc:creator>Namik Taright</dc:creator>
@@ -22,15 +30,6 @@
       <link>https://namiktaright.github.io/posts/2020-12-19-raac-tat-de-la-situation-fin-2020</link>
       <description>A short description of the post.</description>
       <guid>https://namiktaright.github.io/posts/2020-12-19-raac-tat-de-la-situation-fin-2020</guid>
-      <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bienvenue dans mes tâches</title>
-      <dc:creator>Namik Taright</dc:creator>
-      <link>https://namiktaright.github.io/posts/welcome</link>
-      <description>Welcome to our new blog, tasks. We hope you enjoy 
-reading what we have to say!</description>
-      <guid>https://namiktaright.github.io/posts/welcome</guid>
       <pubDate>Sat, 19 Dec 2020 00:00:00 +0000</pubDate>
     </item>
   </channel>
