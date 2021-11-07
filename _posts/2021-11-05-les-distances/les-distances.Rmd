@@ -14,13 +14,6 @@ output: distill::distill_article
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-Compte github
--------------
-namik.taright@free.fr
-nom : NamikTaright
-passwd : cahnud-3mydPy-fissuh
-token : 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
-
 
 Distill is a publication format for scientific and technical writing, native to the web. 
 
